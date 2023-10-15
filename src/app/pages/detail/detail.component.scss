@@ -1,0 +1,248 @@
+@import "../../../assets/scss/_variables.scss";
+.detail {
+  width: 100%;
+  padding-bottom: 100px;
+  .detail_ruban {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 20px;
+    background: $color_white;
+    padding: 15px 20px;
+    translate: 0 -100%;
+    transition: all 0.4s;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.137);
+    &.active {
+      translate: 0 0%;
+    }
+    .ruban_icon {
+      display: flex;
+      align-items: center;
+      line-height: 0px;
+      font-size: 14px;
+    }
+
+    .ruban_food_name {
+      h3 {
+        font-size: 14px;
+      }
+    }
+
+    .ruban_price {
+      p {
+        font-family: "Lato-Black";
+        font-size: 14px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .detail_content {
+    width: 100%;
+    .food_image {
+      width: 100%;
+      height: 22rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .detail_btn {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      button {
+        background: $color_white;
+        color: $color_black;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0px;
+        border-radius: 50%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.137);
+      }
+    }
+
+    .detail_infos {
+      margin-top: 40px;
+      .food_title {
+        h2 {
+          margin-bottom: 15px;
+        }
+        h3 {
+          font-family: "Lato-Black";
+        }
+        p {
+          margin-top: 15px;
+          color: $color_black;
+          opacity: 0.7;
+        }
+      }
+
+      .food_price {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        .delivery {
+          display: block;
+          background: #fdce5859;
+          padding: 5px 10px;
+          border-radius: 20px;
+          color: $color_black;
+          margin: 10px 0;
+          font-family: "Lato-Bold";
+          font-size: 13px;
+        }
+      }
+
+      .food_time {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+        color: $color_black;
+        opacity: 0.9;
+        .food_tm_icon {
+          display: flex;
+          align-items: center;
+          gap: 0 5px;
+          line-height: 0px;
+          svg {
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+
+      .food_desc {
+        width: 100%;
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        p {
+          display: flex;
+          align-items: center;
+          gap: 0 5px;
+          color: $color_black;
+          opacity: 0.8;
+        }
+      }
+
+      .accomp {
+        width: 100%;
+        margin-top: 40px;
+        position: relative;
+        .accomp_title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          p {
+            color: $color_black;
+            opacity: 0.7;
+          }
+        }
+        .accomp_content {
+          margin-top: 30px;
+          display: flex;
+          flex-wrap: nowrap;
+          gap: 0 15px;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          width: 100%;
+          padding-right: 20px;
+          padding-left: 20px;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          .accomp_card {
+            width: 49%;
+            display: flex;
+            gap: 0 10px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            padding: 15px 10px;
+            flex-shrink: 0;
+            scroll-snap-align: center;
+            .accomp_card_image {
+              width: 80px;
+              height: 80px;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .accomp_card_info {
+              h3 {
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .cart_btn {
+      width: 100%;
+      background: $color_white;
+      position: fixed;
+      bottom: 0;
+      padding: 20px;
+      button {
+        width: 100%;
+        background: $color_yellow;
+        color: $color_black;
+        padding: 15px 17px;
+        border-radius: 40px;
+        font-family: "Lato-Bold";
+        font-size: 16px;
+        &.btn_bg_grey {
+          // margin-bottom:15px;
+          background: #f1f1f2;
+        }
+      }
+    }
+
+    .cart_btn_flex {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      button {
+        width: 48%;
+      }
+    }
+
+    @media screen and (max-width: 399px) {
+      .cart_btn {
+        button {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .hr {
+    margin: 30px 0;
+    hr {
+      border: none;
+      background: #cccccc;
+      height: 1px;
+      width: 100%;
+    }
+  }
+}

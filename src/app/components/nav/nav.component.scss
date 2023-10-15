@@ -1,0 +1,67 @@
+@import "../../../assets/scss/_variables.scss";
+.nav {
+  width: 100%;
+  background-color: $color_white;
+  .nav_content {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav_locate {
+      position:relative;
+      p {
+        font-size: 14px;
+        color: $color_black;
+        opacity: 0.7;
+      }
+
+      h3 {
+        margin-top: 10px;
+      }
+    }
+
+    .nav_box_right {
+      display:flex;
+      gap:0 20px;
+      .nav_cart {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #cccccc;
+        border-radius: 50%;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        line-height:0px;
+        position:relative;
+        svg{
+          width:21px;
+          height:21px;
+        }
+        &::after{
+          content:"1";
+          position:absolute;
+          bottom: -4px;
+          left: 23px;
+          width:23px;
+          line-height:23px;
+          border-radius:50%;
+          text-align: center;
+          background-color: #fb3a3a;
+          font-size:11px;
+          color:$color_white;
+        }
+      }
+
+      .nav_profil{
+        img{
+          width:50px;
+          height:50px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

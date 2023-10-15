@@ -1,0 +1,26 @@
+@import "../../../assets/scss/_variables.scss";
+.back {
+  position:fixed;
+  top:0px;
+  left:0;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: $color_white;
+  z-index:200;
+  .back_box {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    line-height: 0px;
+    svg {
+      width: 28px;
+      height: 28px;
+      stroke-width: 10px;
+    }
+
+    .label {
+      font-family: "Lato-Bold";
+    }
+  }
+}

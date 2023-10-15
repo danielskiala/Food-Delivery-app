@@ -1,0 +1,264 @@
+<div class="detail">
+  <div class="detail_ruban" #scroll_ruban>
+    <div class="ruban_icon" (click)="goToHome()">
+      <span class="icon">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.5 19L8.5 12L15.5 5"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+      <span class="label">Retour</span>
+    </div>
+    <div class="ruban_food_name">
+      <h3>Mayebo avec la soupe à la moambe</h3>
+    </div>
+    <div class="ruban_price">
+      <p>3500 fc</p>
+    </div>
+  </div>
+  <div class="detail_content">
+    <div class="detail_btn container">
+      <button (click)="goToHome()">
+        <span class="icon">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.5 19L8.5 12L15.5 5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </button>
+
+      <button>
+        <span class="icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="512"
+            height="512"
+            viewBox="0 0 512 512"
+          >
+            <circle
+              cx="128"
+              cy="256"
+              r="48"
+              style="
+                fill: none;
+                stroke: currentColor;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <circle
+              cx="384"
+              cy="112"
+              r="48"
+              style="
+                fill: none;
+                stroke: currentColor;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <circle
+              cx="384"
+              cy="400"
+              r="48"
+              style="
+                fill: none;
+                stroke: currentColor;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="169.83"
+              y1="279.53"
+              x2="342.17"
+              y2="376.47"
+              style="
+                fill: none;
+                stroke: currentColor;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+            <line
+              x1="342.17"
+              y1="135.53"
+              x2="169.83"
+              y2="232.47"
+              style="
+                fill: none;
+                stroke: currentColor;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 32px;
+              "
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+
+    <div class="food_image">
+      <picture>
+        <source
+          srcset="../../../assets/img/food/13.jpeg"
+          type="image/jpeg"
+          media="(max-width:480px)"
+        />
+        <img src="../../../assets/img/food/13.jpeg" alt="" />
+      </picture>
+    </div>
+
+    <div class="detail_infos">
+      <div class="food_title container">
+        <h2>Mayebo avec la soupe à la moambe</h2>
+        <div class="food_price">
+          <h3>3500 fc</h3>
+          <span class="delivery">Livraison : à partir de 3000 fc</span>
+        </div>
+        <div class="food_time">
+          <span>Temps de livraison estimée :</span>
+          <div class="food_tm_icon">
+            <span class="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.2498 12.0005C21.2498 17.1095 17.1088 21.2505 11.9998 21.2505C6.8908 21.2505 2.7498 17.1095 2.7498 12.0005C2.7498 6.89149 6.8908 2.75049 11.9998 2.75049C17.1088 2.75049 21.2498 6.89149 21.2498 12.0005Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.4314 14.9429L11.6614 12.6939V7.84689"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span>5 min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hr container">
+        <hr />
+      </div>
+
+      <div class="food_desc container">
+        <div class="food_desc_title">
+          <h2>Description</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+            numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ipsum laboriosam quae molestias perspiciatis. Debitis consequatur
+            quo cupiditate eaque, consectetur eius!
+          </p>
+        </div>
+      </div>
+
+      <div class="hr container">
+        <hr />
+      </div>
+
+      <div class="accomp">
+        <div class="accomp_title container">
+          <h2>Boissons</h2>
+          <p>Voir tout</p>
+        </div>
+
+        <div class="accomp_content">
+          <div class="accomp_card">
+            <div class="accomp_card_image">
+              <img src="../../../assets/img/food/17.webp" alt="" />
+            </div>
+            <div class="accomp_card_info">
+              <h3>Canadian pure</h3>
+              <h4>1000 fc</h4>
+            </div>
+          </div>
+
+          <div class="accomp_card">
+            <div class="accomp_card_image">
+              <img src="../../../assets/img/food/18.webp" alt="" />
+            </div>
+            <div class="accomp_card_info">
+              <h3>Coca cola</h3>
+              <h4>2500 fc</h4>
+            </div>
+          </div>
+
+          <div class="accomp_card">
+            <div class="accomp_card_image">
+              <img src="../../../assets/img/food/19.webp" alt="" />
+            </div>
+            <div class="accomp_card_info">
+              <h3>Fanta</h3>
+              <h4>2500 fc</h4>
+            </div>
+          </div>
+
+          <div class="accomp_card">
+            <div class="accomp_card_image">
+              <img src="../../../assets/img/food/20.webp" alt="" />
+            </div>
+            <div class="accomp_card_info">
+              <h3>Vimto</h3>
+              <h4>3500 fc</h4>
+            </div>
+          </div>
+
+          <div class="accomp_card">
+            <div class="accomp_card_image">
+              <img src="../../../assets/img/food/21.jpeg" alt="" />
+            </div>
+            <div class="accomp_card_info">
+              <h3>Savana</h3>
+              <h4>3500 fc</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart_btn cart_btn_flex">
+      <button class="btn_bg_grey" (click)="goToCart()">Ajouter au panier</button>
+      <button>Acheter maintenant</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,222 @@
+@import "../../../assets/scss/variables.scss";
+
+/*****************************************/
+/*** STATISTIQUE DES COMMANDES
+/*****************************************/
+.stats_order {
+  width: 100%;
+  margin-top: 25px;
+  .stat_order_title {
+    p {
+      margin-top: 5px;
+      color: $color_black;
+      opacity: 0.7;
+    }
+  }
+
+  .stats_order_content {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 20px;
+    .stat_order {
+      display: flex;
+      gap: 0 10px;
+      .stat_icon {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #cccccc;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0px;
+      }
+
+      p {
+        margin-top: 5px;
+        color: $color_black;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+/*****************************************/
+/*** WAY DELIVERY
+/*****************************************/
+.way_delivery {
+  width: 100%;
+  margin-top: 40px;
+  .way_delivery_title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      color: $color_black;
+      opacity: 0.7;
+    }
+  }
+
+  .way_delivery_content {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .way_delivery_card {
+      display: flex;
+      width: 100%;
+      gap: 0 15px;
+      flex-shrink: 0;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      padding: 20px 10px;
+      background: $color_white;
+      scroll-snap-align: center;
+      .food_image {
+        // width:40%;
+        overflow: hidden;
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.224);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+          overflow: hidden;
+        }
+      }
+      .way_delivery_box {
+        display: flex;
+        width:100%;
+        .food_infos {
+          width: 100%;
+          font-size: 14px;
+          h4 {
+            margin-bottom: 5px;
+          }
+
+          p {
+            color: $color_black;
+            opacity: 0.6;
+          }
+          .delivery_time {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+            white-space: nowrap;
+            font-size:13px;
+            .delivery_hour,
+            .delivery_price {
+              display: flex;
+              align-items: center;
+              font-family: "Lato-Bold";
+              gap: 0 5px;
+            }
+          }
+        }
+
+        .food_price {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          height: 100%;
+          font-size: 14px;
+          p {
+            font-family: "Lato-Black";
+          }
+
+          .food_chevron {
+            width: 25px;
+            height: 25px;
+            border: 1px solid #cccccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            line-height: 0px;
+            margin-top: 20px;
+            svg {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*****************************************/
+/*** DISH OF DAY
+/*****************************************/
+
+.dish_of_day {
+  width: 100%;
+  margin-top: 10px;
+  .dish_grid{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top:20px;
+    gap:20px 12px;
+    .dish_card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border:1px solid #cccccc;
+      border-radius:6px;
+      padding:20px 0;
+      .food_image{
+        width:120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.224);
+        img{
+          width:100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+
+      .dish_infos{
+        margin-top:10px;
+        padding:10px 10px 0;
+        width: 100%;
+        .dish_info_head{
+          gap:0 8px;
+          .dish_title{            
+            p{
+              color:$color_black;
+              opacity: .6;
+            }
+          }
+          .price{
+            white-space: nowrap;
+            font-family: "Lato-Black";
+            margin-top:10px;
+          }
+        }
+      }
+    }
+  }
+}
