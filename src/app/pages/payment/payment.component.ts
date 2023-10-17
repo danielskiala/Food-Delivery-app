@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./payment.component.scss']
 })
 export class PaymentComponent {
-
+  pay_confirm:boolean;
+  payConfirm(){
+    this.pay_confirm = !this.pay_confirm;
+  }
 }

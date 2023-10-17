@@ -1,7 +1,7 @@
 @import "../../../assets/scss/_variables.scss";
 .detail {
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   .detail_ruban {
     position: fixed;
     top: 0;
@@ -207,7 +207,7 @@
         width: 100%;
         background: $color_yellow;
         color: $color_black;
-        padding: 15px 17px;
+        padding: 20px 17px;
         border-radius: 40px;
         font-family: "Lato-Bold";
         font-size: 16px;
